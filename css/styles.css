@@ -4,7 +4,8 @@ body {
     font-weight: 300;
     line-height: 1.5em;
     letter-spacing: 0.02em;
-    color: black;
+    background-color: #000000;
+    color: white;
     box-sizing: border-box;   
 }
 
@@ -45,7 +46,7 @@ h3 {
 	position: fixed;
     top:0;
     left: 0;
-    background-color: #fff;
+    background-color: #000;
 
 }
 
@@ -71,11 +72,7 @@ h3 {
 
 .wrapper .header .navbar-nav {
     width: 60%;
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-top: 10px;*/
-    /* padding-right: 30px;  */
+
 }
 
 .wrapper .header .navbar-nav .nav-item .nav-link .far{
@@ -90,20 +87,25 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-align: center;
     height: 70vh;
     margin-top: 25vh;
+    align-items: center;
 }
 
 .wrapper .home .intro {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    align-items: center;
 }
 
 .wrapper .home .intro p {
+    max-width: 700px;
     font-family: 'Source Serif Pro', serif;
-    font-size: 3.4vw;
+    font-size: 40PX;
     line-height: 1.5em;
+    margin-top: 30px;;
 }
 
 .wrapper .home .intro .location{
@@ -113,7 +115,7 @@ h3 {
 }
 
 .wrapper .home .services {
-    color: grey;
+    color: white;
     font-size: 20px;
     max-width: 500px;
     line-height: 1.5em;
@@ -121,192 +123,3 @@ h3 {
 
 
 
-
-
-
-/* Projects Section */
-
-#projects {
-    margin-top: 100px;
-}
-
-
-
-.project {
-    margin-top: 100px;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.project-details{
-    width: 34%;
-    position: relative;
-}
-
-.project-name {
-    font-size: 48px;
-    line-height: 1.5em;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Source Sans Pro', sans-serif ;
-}
-
-.project-info {
-    margin-top: 35px;
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 1.5em;
-    
-}
-
-.project .project-details a{
-    display: inline-block;
-    margin-top: 35px;
-    font-size: 18px;
-    font-weight: 400;
-    color: lightgrey;
-    text-decoration: underline;
-}
-
-
-.project .project-img{
-    width: 60%;
-    /* padding: 20px; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    border-radius: 5px;
-
-}
-
-.project img {
-    width: 100%;
-}
-
-.project .project-img .img-credits a{
-    top: 0;
-    font-size: 8px;
-    color: gray;
-    text-align: right;
-}
-
-.project video {
-    width: 100%;
-}
-
-/* Contact information */
-.contact {
-    text-align: center;
-    margin-top: 100px;
-}
-
-
-.email{
-    margin-top: 5px;
-
-}
-
-.contact p a{
-    color: black;
-    
-}
-
-.contact-info {
-    margin-top: 70px;
-}
-
-.social-media {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.social-items {
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    justify-content: space-around;
-    margin-top: 10px; 
-}
-
-.fa-whatsapp {
-    color: #25D366 ;
-}
-
-.fa-instagram{
-    color: transparent;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-    background-clip: text;
-    -webkit-background-clip: text;
-}
-
-.fa-linkedin-in {
-    color: #0e76a8 ;
-}
-
-.fa-facebook-f {
-    color: #4267B2 ;
-}
-
-.fa-twitter {
-    color: #1DA1F2 ;
-}
-
-.fa-medium-m{
-    color: #000000 ;
-}
-
-/* Footer */
-#footer {
-    margin-top: 50px;
-    text-align: center;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 10px;
-    margin-bottom: 10px;
-}
-
-/* Mobile Options */
-
-@media only screen and (max-width: 700px) {
-    .wrapper .header .logo{
-        width: 50%;
-    }
-
-    .wrapper .home {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: 55vh;
-        margin-top: 25vh;
-    }
-    .wrapper .services p{
-        max-width: 300px;
-        font-size: 3vw;
-        line-height: 1.5;
-    }
-
-    .project-name{
-        font-size: 3.5vw;
-        
-
-    }
-
-    .project-info{
-        font-size: 3vw;
-        margin-top: 10px;
-
-    }
-
-    .project .project-details a{
-        font-size: 2.5vw;
-        margin-top: 10px;
-
-    }
-
-  }
